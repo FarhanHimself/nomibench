@@ -1,0 +1,7 @@
+include README.md LICENSE CHANGELOG.md CITATION.cff .zenodo.json MANIFEST.in RELEASE_CHECKLIST.md .gitignore .gitattributes
+recursive-include tests *.py *.json *.csv *.R *.md
+recursive-include docs *.md
+recursive-include repro *.py *.md
+recursive-include examples *.py
+recursive-include .github *.yml
+global-exclude __pycache__ *.py[cod]

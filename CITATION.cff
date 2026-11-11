@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use nomibench, please cite the archived release and the paper."
+title: "nomibench: calibrated, discoverability-matched benchmarks of gene nominations against genetic causal support"
+version: 1.0.0
+date-released: 2026-10-06        # TO FILL: the date of the tagged release
+license: BSD-3-Clause
+repository-code: "https://github.com/FarhanHimself/nomibench"
+# doi: add the release DOI here once Zenodo has reserved or minted it (RELEASE_CHECKLIST.md)
+type: software
+authors:                         # TO FILL: every author, in order; orcid is optional
+  - family-names: "FAMILY NAME"
+    given-names: "GIVEN NAMES"
+    affiliation: "AFFILIATION"
+keywords:
+  - Mendelian randomization
+  - SMR
+  - Firth logistic regression
+  - propensity score
+  - plasmode simulation
+  - negative controls
+  - gene prioritisation
+  - Alzheimer's disease
+abstract: >-
+  Tests whether a set of nominated genes carries more genetic causal support (for example SMR/HEIDI support) than
+  its genes' discoverability predicts. Provides a propensity-score Firth estimator with penalised-likelihood
+  inference, secondary and doubly robust estimators, estimand-targeted plasmode calibration, discoverability-matched
+  negative-control gene sets, a genomic-block bootstrap and pre-specified decision rules.

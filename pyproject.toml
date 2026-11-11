@@ -1,0 +1,64 @@
+[build-system]
+requires = ["setuptools>=77"]            # PEP 639 licence expression and license-files
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nomibench"
+version = "1.0.0"
+description = "Calibrated, discoverability-matched benchmarks of gene nominations against genetic causal support"
+readme = "README.md"
+license = "BSD-3-Clause"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+authors = [{ name = "nomibench authors" }]
+keywords = ["genetics", "Mendelian randomization", "SMR", "Firth regression", "propensity score",
+            "plasmode simulation", "benchmark", "gene prioritisation", "Alzheimer's disease"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Science/Research",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "pandas>=1.5",
+    "statsmodels>=0.13",
+    "patsy>=0.5.3",
+    "scikit-learn>=1.2",
+    "threadpoolctl>=3.1",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+parquet = ["pyarrow>=12"]                # only for reading .parquet gene tables on the command line
+
+[project.scripts]
+nomibench = "nomibench.cli:main"
+
+[project.urls]
+Documentation = "https://github.com/FarhanHimself/nomibench#readme"
+Source = "https://github.com/FarhanHimself/nomibench"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+nomibench = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["slow: long-running simulation checks (deselect with -m 'not slow')"]
+
+[tool.ruff]
+line-length = 120
+# A byte copy of paper 1's registered exposure-set script, kept unchanged so its sha256 matches the freeze.
+extend-exclude = ["repro/paper1/build_e5_sets.py"]
+
+[tool.ruff.lint.per-file-ignores]
+# I (information matrix) is standard notation in the conditional-likelihood code.
+"src/nomibench/conditional.py" = ["E741"]
+"tests/test_conditional.py" = ["E741"]
+# The reproduction script mirrors the registered scripts' compact style.
+"repro/paper1/reproduce_registered.py" = ["E702", "E731"]

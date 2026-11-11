@@ -1,0 +1,4 @@
+# LF everywhere, so file hashes (docs/VALIDATION.md) are the same on every platform
+* text=auto eol=lf
+*.whl binary
+*.gz binary

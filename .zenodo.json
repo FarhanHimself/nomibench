@@ -1,0 +1,13 @@
+{
+  "title": "nomibench: calibrated, discoverability-matched benchmarks of gene nominations against genetic causal support",
+  "upload_type": "software",
+  "version": "1.0.0",
+  "license": "BSD-3-Clause",
+  "description": "Tests whether a set of nominated genes carries more genetic causal support (for example SMR/HEIDI support) than its genes' discoverability predicts. Propensity-score Firth estimator with penalised-likelihood inference; secondary and doubly robust estimators; estimand-targeted plasmode calibration; discoverability-matched negative-control gene sets; genomic-block bootstrap; pre-specified decision rules. Includes the reproduction script for paper 1 (no data).",
+  "creators": [
+    {"name": "TO FILL: FAMILY NAME, GIVEN NAMES", "affiliation": "TO FILL: AFFILIATION"}
+  ],
+  "keywords": ["Mendelian randomization", "SMR", "Firth logistic regression", "propensity score",
+               "plasmode simulation", "negative controls", "gene prioritisation", "Alzheimer's disease"],
+  "access_right": "open"
+}

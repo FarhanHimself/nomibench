@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.venv/
+# never commit private inputs or their derivatives
+*ugw_covariates*
+*smr_gw_all*
+repro_out*/
+repro_[AB]*/
+private/
+.ruff_cache/
