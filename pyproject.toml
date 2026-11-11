@@ -10,7 +10,7 @@ readme = "README.md"
 license = "BSD-3-Clause"
 license-files = ["LICENSE"]
 requires-python = ">=3.10"
-authors = [{ name = "nomibench authors" }]
+authors = [{ name = "Mohammad Payvar" }]
 keywords = ["genetics", "Mendelian randomization", "SMR", "Firth regression", "propensity score",
             "plasmode simulation", "benchmark", "gene prioritisation", "Alzheimer's disease"]
 classifiers = [

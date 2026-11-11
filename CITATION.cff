@@ -7,10 +7,9 @@ license: BSD-3-Clause
 repository-code: "https://github.com/FarhanHimself/nomibench"
 # doi: add the release DOI here once Zenodo has reserved or minted it (RELEASE_CHECKLIST.md)
 type: software
-authors:                         # TO FILL: every author, in order; orcid is optional
-  - family-names: "FAMILY NAME"
-    given-names: "GIVEN NAMES"
-    affiliation: "AFFILIATION"
+authors:                         # TO FILL before the tagged release: affiliation, ORCID and any co-authors, in order
+  - family-names: "Payvar"
+    given-names: "Mohammad"
 keywords:
   - Mendelian randomization
   - SMR
